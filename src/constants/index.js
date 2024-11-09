@@ -144,7 +144,7 @@ const experiences = [
     company_name: "Shipminds Technology",
     icon: coverhunt,
     iconBg: "#333333",
-    date: "Aprill 2024 - Present",
+    date: "April 2024 - Present",
   },
 ];
 
