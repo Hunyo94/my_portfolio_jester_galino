@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { send, sendHover } from "../assets";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const formRef = useRef();
@@ -29,7 +30,7 @@ const Contact = () => {
     //click on create a new template then click on save.
     emailjs
       .send(
-        "service_8210ixs", // paste your ServiceID here (you'll get one when your service is created).
+        "service_pkrv43g", // paste your ServiceID here (you'll get one when your service is created).
         "template_ol6zvx8", // paste your TemplateID here (you'll find it under email templates).
         {
           from_name: form.name,
@@ -43,8 +44,13 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
+          Swal.fire({
+            title: "Email sent!",
+            text: "Thank you. I will get back to you as soon as possible.",
+            icon: "success",
+            timer: 1500,
+            timerProgressBar: true,
+          });
           setForm({
             name: "",
             email: "",

@@ -63,6 +63,7 @@ import shiftminds from "./projects/shiftminds_web.png";
 import aksha from "./projects/aksha_web.png";
 import loyaltylinx from "./projects/loyalty_linx.png";
 import ourfather from "./projects/our_father.png";
+import ims from "./projects/ims.png";
 
 export {
   evve,
@@ -127,4 +128,5 @@ export {
   microverse,
   loyaltylinx,
   ourfather,
+  ims,
 };

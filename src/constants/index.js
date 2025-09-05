@@ -27,6 +27,7 @@ import {
   ourfather,
   flutter,
   dart,
+  ims,
 } from "../assets";
 
 export const navLinks = [
@@ -144,7 +145,7 @@ const experiences = [
     company_name: "Shipminds Technology",
     icon: coverhunt,
     iconBg: "#333333",
-    date: "April 2024 - Present",
+    date: "April 2024 - MAY 2025",
   },
 ];
 
@@ -265,4 +266,29 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+const projectsExtension = [
+{
+    id: "project-1",
+    name: "Books & Clothes House IMS",
+    description:"Books and clothes house A comprehensive solution for managing your inventory efficiently and effectively.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ims,
+    repo: "https://github.com/shaqdeff/Nyeusi-Fest-Site",
+    demo: "https://cloude-based-ims.netlify.app/eCommerce",
+  },
+]
+
+export { services, technologies, experiences, projects, projectsExtension };
